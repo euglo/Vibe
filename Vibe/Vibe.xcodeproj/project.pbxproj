@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB4533282428255D00FAD748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4533272428255D00FAD748 /* AppDelegate.swift */; };
+		EB45332C2428255D00FAD748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB45332B2428255D00FAD748 /* ViewController.swift */; };
+		EB4533312428255F00FAD748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4533302428255F00FAD748 /* Assets.xcassets */; };
+		EB4533342428255F00FAD748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4533322428255F00FAD748 /* LaunchScreen.storyboard */; };
+		EB553DFE242998C5004EBD7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB553DFD242998C5004EBD7D /* SceneDelegate.swift */; };
+		EB6929B62429814900422E14 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B52429814900422E14 /* ProfileViewController.swift */; };
+		EB6929B82429871100422E14 /* SpotifyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B72429871100422E14 /* SpotifyData.swift */; };
+		EBD75BD1242953C60073866F /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC6242953C60073866F /* OpenSans-SemiBold.ttf */; };
+		EBD75BD2242953C60073866F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC7242953C60073866F /* OpenSans-Light.ttf */; };
+		EBD75BD3242953C60073866F /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC8242953C60073866F /* OpenSans-Italic.ttf */; };
+		EBD75BD4242953C60073866F /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC9242953C60073866F /* OpenSans-ExtraBold.ttf */; };
+		EBD75BD5242953C60073866F /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCA242953C60073866F /* OpenSans-LightItalic.ttf */; };
+		EBD75BD6242953C60073866F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCB242953C60073866F /* OpenSans-Bold.ttf */; };
+		EBD75BD7242953C60073866F /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCC242953C60073866F /* OpenSans-SemiBoldItalic.ttf */; };
+		EBD75BD8242953C60073866F /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCD242953C60073866F /* OpenSans-ExtraBoldItalic.ttf */; };
+		EBD75BD9242953C60073866F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCE242953C60073866F /* LICENSE.txt */; };
+		EBD75BDA242953C60073866F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCF242953C60073866F /* OpenSans-Regular.ttf */; };
+		EBD75BDB242953C60073866F /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BD0242953C60073866F /* OpenSans-BoldItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB4533242428255D00FAD748 /* Vibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4533272428255D00FAD748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB45332B2428255D00FAD748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB4533302428255F00FAD748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4533332428255F00FAD748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB4533352428255F00FAD748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB553DFD242998C5004EBD7D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/SceneDelegate.swift"; sourceTree = "<group>"; };
+		EB6929B52429814900422E14 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EB6929B72429871100422E14 /* SpotifyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyData.swift; sourceTree = "<group>"; };
+		EB9A5A9A24283A7800DCBD97 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = Vibe/SpotifyiOS.framework; sourceTree = "<group>"; };
+		EBD75BC6242953C60073866F /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		EBD75BC7242953C60073866F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		EBD75BC8242953C60073866F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		EBD75BC9242953C60073866F /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EBD75BCA242953C60073866F /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		EBD75BCB242953C60073866F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		EBD75BCC242953C60073866F /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EBD75BCD242953C60073866F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EBD75BCE242953C60073866F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		EBD75BCF242953C60073866F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		EBD75BD0242953C60073866F /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB4533212428255D00FAD748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB45331B2428255D00FAD748 = {
+			isa = PBXGroup;
+			children = (
+				EB4533262428255D00FAD748 /* Vibe */,
+				EB4533252428255D00FAD748 /* Products */,
+				EB9A5A9924283A7800DCBD97 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB4533252428255D00FAD748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4533242428255D00FAD748 /* Vibe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB4533262428255D00FAD748 /* Vibe */ = {
+			isa = PBXGroup;
+			children = (
+				EB4533272428255D00FAD748 /* AppDelegate.swift */,
+				EB553DFD242998C5004EBD7D /* SceneDelegate.swift */,
+				EBD75BDE242962B20073866F /* Controllers */,
+				EBD75BC5242953C60073866F /* Fonts */,
+				EB4533302428255F00FAD748 /* Assets.xcassets */,
+				EB4533322428255F00FAD748 /* LaunchScreen.storyboard */,
+				EB4533352428255F00FAD748 /* Info.plist */,
+				EB6929B92429888500422E14 /* Globals */,
+			);
+			path = Vibe;
+			sourceTree = "<group>";
+		};
+		EB6929B92429888500422E14 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				EB6929B72429871100422E14 /* SpotifyData.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		EB9A5A9924283A7800DCBD97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB9A5A9A24283A7800DCBD97 /* SpotifyiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBD75BC5242953C60073866F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EBD75BC6242953C60073866F /* OpenSans-SemiBold.ttf */,
+				EBD75BC7242953C60073866F /* OpenSans-Light.ttf */,
+				EBD75BC8242953C60073866F /* OpenSans-Italic.ttf */,
+				EBD75BC9242953C60073866F /* OpenSans-ExtraBold.ttf */,
+				EBD75BCA242953C60073866F /* OpenSans-LightItalic.ttf */,
+				EBD75BCB242953C60073866F /* OpenSans-Bold.ttf */,
+				EBD75BCC242953C60073866F /* OpenSans-SemiBoldItalic.ttf */,
+				EBD75BCD242953C60073866F /* OpenSans-ExtraBoldItalic.ttf */,
+				EBD75BCE242953C60073866F /* LICENSE.txt */,
+				EBD75BCF242953C60073866F /* OpenSans-Regular.ttf */,
+				EBD75BD0242953C60073866F /* OpenSans-BoldItalic.ttf */,
+			);
+			name = Fonts;
+			path = ../../../../Downloads/Fonts;
+			sourceTree = "<group>";
+		};
+		EBD75BDE242962B20073866F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB45332B2428255D00FAD748 /* ViewController.swift */,
+				EB6929B52429814900422E14 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB4533232428255D00FAD748 /* Vibe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4533382428255F00FAD748 /* Build configuration list for PBXNativeTarget "Vibe" */;
+			buildPhases = (
+				EB4533202428255D00FAD748 /* Sources */,
+				EB4533212428255D00FAD748 /* Frameworks */,
+				EB4533222428255D00FAD748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vibe;
+			productName = Vibe;
+			productReference = EB4533242428255D00FAD748 /* Vibe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB45331C2428255D00FAD748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Eugene Lo";
+				TargetAttributes = {
+					EB4533232428255D00FAD748 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EB45331F2428255D00FAD748 /* Build configuration list for PBXProject "Vibe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB45331B2428255D00FAD748;
+			productRefGroup = EB4533252428255D00FAD748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB4533232428255D00FAD748 /* Vibe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB4533222428255D00FAD748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD75BD9242953C60073866F /* LICENSE.txt in Resources */,
+				EBD75BD7242953C60073866F /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				EB4533342428255F00FAD748 /* LaunchScreen.storyboard in Resources */,
+				EBD75BD1242953C60073866F /* OpenSans-SemiBold.ttf in Resources */,
+				EBD75BD6242953C60073866F /* OpenSans-Bold.ttf in Resources */,
+				EBD75BD5242953C60073866F /* OpenSans-LightItalic.ttf in Resources */,
+				EBD75BD2242953C60073866F /* OpenSans-Light.ttf in Resources */,
+				EBD75BD3242953C60073866F /* OpenSans-Italic.ttf in Resources */,
+				EBD75BDB242953C60073866F /* OpenSans-BoldItalic.ttf in Resources */,
+				EBD75BD8242953C60073866F /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				EB4533312428255F00FAD748 /* Assets.xcassets in Resources */,
+				EBD75BDA242953C60073866F /* OpenSans-Regular.ttf in Resources */,
+				EBD75BD4242953C60073866F /* OpenSans-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB4533202428255D00FAD748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB553DFE242998C5004EBD7D /* SceneDelegate.swift in Sources */,
+				EB45332C2428255D00FAD748 /* ViewController.swift in Sources */,
+				EB4533282428255D00FAD748 /* AppDelegate.swift in Sources */,
+				EB6929B82429871100422E14 /* SpotifyData.swift in Sources */,
+				EB6929B62429814900422E14 /* ProfileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB4533322428255F00FAD748 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4533332428255F00FAD748 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB4533362428255F00FAD748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB4533372428255F00FAD748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB4533392428255F00FAD748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QDYL7YJ95;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vibe",
+				);
+				INFOPLIST_FILE = Vibe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.euglo.Vibe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB45333A2428255F00FAD748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QDYL7YJ95;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vibe",
+				);
+				INFOPLIST_FILE = Vibe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.euglo.Vibe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB45331F2428255D00FAD748 /* Build configuration list for PBXProject "Vibe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4533362428255F00FAD748 /* Debug */,
+				EB4533372428255F00FAD748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4533382428255F00FAD748 /* Build configuration list for PBXNativeTarget "Vibe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4533392428255F00FAD748 /* Debug */,
+				EB45333A2428255F00FAD748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB45331C2428255D00FAD748 /* Project object */;
+}

@@ -4,8 +4,8 @@ const cors = require('cors');
 const querystring = require('querystring');
 const cookieParser = require('cookie-parser');
 
-const client_id = '0afb15b457fa42348375ba8b6ea369af';
-const client_secret = 'd0b3ca78d0314b28a80dee478e854efb';
+const client_id = '4ad4037801ea4fc29733f59132a872a3';
+const client_secret = 'a63558cbcdc442358d43dbe20aca27de';
 const redirect_uri = 'http://localhost:8888/callback';
 
 const generateRandomString = (length) => {
@@ -30,16 +30,18 @@ app.use(express.static(__dirname + '/public'))
 app.get('/login', (req, res) => {
     const state = generateRandomString(16);
     res.cookie(stateKey, state);
-
+    
     const scope = 'user-read-private user-read-email';
+    const str = querystring.stringify({
+        response_type: 'code',
+        client_id,
+        scope,
+        redirect_uri,
+        state
+    })
+    console.log(str)
     res.redirect('https://accounts.spotify.com/authorize?' + 
-        querystring.stringify({
-            response_type: 'code',
-            client_id,
-            scope,
-            redirect_uri,
-            state
-        }));
+        str);
 });
 
 app.get('/callback', (req, res) => {
