@@ -10,16 +10,16 @@ import UIKit
 import AuthenticationServices
 
 class ViewController: UIViewController {
-    let SpotifyClientID = "4ad4037801ea4fc29733f59132a872a3"
-    let SpotifyRedirectURL = "vibe-login://spotify-login-callback"
+    let spotifyManager = SpotifyManager.shared
     
     let spotifyButton: UIButton = {
         let button = UIButton()
+        let padding: CGFloat = 12
         button.layer.cornerRadius = 30
         button.backgroundColor = UIColor(red: 0.11, green: 0.73, blue: 0.33, alpha: 1.0)
         button.setImage(UIImage(named: "Spotify_Logo_RGB_White"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
-        button.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        button.imageEdgeInsets = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(tappedSpotifyButton), for: .touchUpInside)
         return button
@@ -36,24 +36,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .systemBackground
-        
-        view.addSubview(spotifyButton)
-        view.addSubview(connectLabel)
-        
+
         setupLayout()
     }
     
     // MARK: Handler functions
     @objc func tappedSpotifyButton(_ sender: UIButton) {
-        let scope = "user-read-private user-read-email"
+        let scope = "user-read-private user-read-email user-top-read"
         
         let queryDict: [String: String] = [
             "response_type": "code",
-            "client_id": SpotifyClientID,
+            "client_id": spotifyManager.getClientID(),
             "scope": scope,
-            "redirect_uri": SpotifyRedirectURL
+            "redirect_uri": spotifyManager.getRedirectURL()
         ]
         
         let myURL = URL(string: "https://accounts.spotify.com/authorize?" + queryString(queryDict: queryDict))!
@@ -62,18 +57,20 @@ class ViewController: UIViewController {
         let session = ASWebAuthenticationSession(url: myURL, callbackURLScheme: scheme) { callbackURL, error in
             guard error == nil, let callbackURL = callbackURL else { return }
             let queryItems = URLComponents(string: callbackURL.absoluteString)?.queryItems
-            let code = queryItems?.filter({ $0.name == "code" }).first?.value ?? ""
-            SpotifyData.shared.code = code
             
-            let profileVC = ProfileViewController()
-            //profileVC.code = code
-            profileVC.modalPresentationStyle = .fullScreen
-            profileVC.modalTransitionStyle = .crossDissolve
-            self.present(profileVC, animated: true, completion: nil)
+            if let code = queryItems?.filter({ $0.name == "code" }).first?.value {
+                self.spotifyManager.setCode(code: code)
+                self.spotifyManager.getToken {
+                    let tableVC = TableViewController()
+                    let navigation = UINavigationController(rootViewController: tableVC)
+                    navigation.modalPresentationStyle = .fullScreen
+                    navigation.modalTransitionStyle = .crossDissolve
+                    self.present(navigation, animated: true, completion: nil)
+                }
+            }
         }
         
         session.presentationContextProvider = self
-        
         session.start()
     }
     
@@ -93,6 +90,11 @@ class ViewController: UIViewController {
     }
     
     private func setupLayout() {
+        view.backgroundColor = .systemBackground
+        
+        view.addSubview(spotifyButton)
+        view.addSubview(connectLabel)
+        
         let constraints = [
             // Spotify button constraints
             spotifyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),

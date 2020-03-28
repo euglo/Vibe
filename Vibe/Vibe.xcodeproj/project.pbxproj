@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44E7BDF983FB2FE009C8839 /* libPods-Vibe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B14EABD79C60120698ABDC /* libPods-Vibe.a */; };
+		EB0CC4B0242E8CCC0070EEED /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CC4AF242E8CCC0070EEED /* TableViewController.swift */; };
+		EB0CC4B2242F074C0070EEED /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CC4B1242F074C0070EEED /* ArtistCell.swift */; };
+		EB2722D3242BF02E00D89DB6 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2722D2242BF02E00D89DB6 /* ItemListView.swift */; };
 		EB4533282428255D00FAD748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4533272428255D00FAD748 /* AppDelegate.swift */; };
 		EB45332C2428255D00FAD748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB45332B2428255D00FAD748 /* ViewController.swift */; };
 		EB4533312428255F00FAD748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4533302428255F00FAD748 /* Assets.xcassets */; };
 		EB4533342428255F00FAD748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4533322428255F00FAD748 /* LaunchScreen.storyboard */; };
+		EB542E72242D5F03006215D7 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB542E71242D5F03006215D7 /* DataType.swift */; };
 		EB553DFE242998C5004EBD7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB553DFD242998C5004EBD7D /* SceneDelegate.swift */; };
 		EB6929B62429814900422E14 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B52429814900422E14 /* ProfileViewController.swift */; };
-		EB6929B82429871100422E14 /* SpotifyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B72429871100422E14 /* SpotifyData.swift */; };
+		EB6929B82429871100422E14 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B72429871100422E14 /* SpotifyManager.swift */; };
+		EBB9CF1F242DAEC700FA4D5C /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9CF1E242DAEC700FA4D5C /* TrackCell.swift */; };
+		EBB9CF21242DCB4C00FA4D5C /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9CF20242DCB4C00FA4D5C /* MenuBar.swift */; };
+		EBCA5C21242AE63D00046D62 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5C20242AE63D00046D62 /* Track.swift */; };
+		EBCA5C24242AE66E00046D62 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5C23242AE66E00046D62 /* TokenData.swift */; };
+		EBCA5C26242B10B600046D62 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5C25242B10B600046D62 /* Album.swift */; };
+		EBCA5C28242B10DF00046D62 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5C27242B10DF00046D62 /* Artist.swift */; };
 		EBD75BD1242953C60073866F /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC6242953C60073866F /* OpenSans-SemiBold.ttf */; };
 		EBD75BD2242953C60073866F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC7242953C60073866F /* OpenSans-Light.ttf */; };
 		EBD75BD3242953C60073866F /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BC8242953C60073866F /* OpenSans-Italic.ttf */; };
@@ -25,19 +36,33 @@
 		EBD75BD9242953C60073866F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCE242953C60073866F /* LICENSE.txt */; };
 		EBD75BDA242953C60073866F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BCF242953C60073866F /* OpenSans-Regular.ttf */; };
 		EBD75BDB242953C60073866F /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD75BD0242953C60073866F /* OpenSans-BoldItalic.ttf */; };
+		EBE2E02D242C886700D37739 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2E02C242C886700D37739 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		038144B70DB7EC1232E69FD0 /* Pods-Vibe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibe.debug.xcconfig"; path = "Target Support Files/Pods-Vibe/Pods-Vibe.debug.xcconfig"; sourceTree = "<group>"; };
+		6F814E2DD4311A101F552F78 /* Pods-Vibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibe.release.xcconfig"; path = "Target Support Files/Pods-Vibe/Pods-Vibe.release.xcconfig"; sourceTree = "<group>"; };
+		A0B14EABD79C60120698ABDC /* libPods-Vibe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vibe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0CC4AF242E8CCC0070EEED /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EB0CC4B1242F074C0070EEED /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		EB2722D2242BF02E00D89DB6 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		EB4533242428255D00FAD748 /* Vibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4533272428255D00FAD748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB45332B2428255D00FAD748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB4533302428255F00FAD748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4533332428255F00FAD748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4533352428255F00FAD748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB542E71242D5F03006215D7 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		EB553DFD242998C5004EBD7D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/SceneDelegate.swift"; sourceTree = "<group>"; };
 		EB6929B52429814900422E14 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EB6929B72429871100422E14 /* SpotifyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyData.swift; sourceTree = "<group>"; };
+		EB6929B72429871100422E14 /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
 		EB9A5A9A24283A7800DCBD97 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = Vibe/SpotifyiOS.framework; sourceTree = "<group>"; };
+		EBB9CF1E242DAEC700FA4D5C /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		EBB9CF20242DCB4C00FA4D5C /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		EBCA5C20242AE63D00046D62 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		EBCA5C23242AE66E00046D62 /* TokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		EBCA5C25242B10B600046D62 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		EBCA5C27242B10DF00046D62 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		EBD75BC6242953C60073866F /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		EBD75BC7242953C60073866F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		EBD75BC8242953C60073866F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -49,6 +74,7 @@
 		EBD75BCE242953C60073866F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		EBD75BCF242953C60073866F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		EBD75BD0242953C60073866F /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EBE2E02C242C886700D37739 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +82,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44E7BDF983FB2FE009C8839 /* libPods-Vibe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE15FF6E48E0DC28E056324A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				038144B70DB7EC1232E69FD0 /* Pods-Vibe.debug.xcconfig */,
+				6F814E2DD4311A101F552F78 /* Pods-Vibe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB2722D4242BF03400D89DB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB2722D2242BF02E00D89DB6 /* ItemListView.swift */,
+				EBE2E02C242C886700D37739 /* HeaderView.swift */,
+				EBB9CF1E242DAEC700FA4D5C /* TrackCell.swift */,
+				EB0CC4B1242F074C0070EEED /* ArtistCell.swift */,
+				EBB9CF20242DCB4C00FA4D5C /* MenuBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EB45331B2428255D00FAD748 = {
 			isa = PBXGroup;
 			children = (
 				EB4533262428255D00FAD748 /* Vibe */,
 				EB4533252428255D00FAD748 /* Products */,
 				EB9A5A9924283A7800DCBD97 /* Frameworks */,
+				AE15FF6E48E0DC28E056324A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,25 +138,40 @@
 				EB4533302428255F00FAD748 /* Assets.xcassets */,
 				EB4533322428255F00FAD748 /* LaunchScreen.storyboard */,
 				EB4533352428255F00FAD748 /* Info.plist */,
-				EB6929B92429888500422E14 /* Globals */,
+				EB6929B92429888500422E14 /* Managers */,
+				EBCA5C22242AE64200046D62 /* Models */,
+				EB2722D4242BF03400D89DB6 /* Views */,
 			);
 			path = Vibe;
 			sourceTree = "<group>";
 		};
-		EB6929B92429888500422E14 /* Globals */ = {
+		EB6929B92429888500422E14 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				EB6929B72429871100422E14 /* SpotifyData.swift */,
+				EB6929B72429871100422E14 /* SpotifyManager.swift */,
 			);
-			path = Globals;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		EB9A5A9924283A7800DCBD97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				EB9A5A9A24283A7800DCBD97 /* SpotifyiOS.framework */,
+				A0B14EABD79C60120698ABDC /* libPods-Vibe.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBCA5C22242AE64200046D62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBCA5C20242AE63D00046D62 /* Track.swift */,
+				EBCA5C23242AE66E00046D62 /* TokenData.swift */,
+				EBCA5C25242B10B600046D62 /* Album.swift */,
+				EBCA5C27242B10DF00046D62 /* Artist.swift */,
+				EB542E71242D5F03006215D7 /* DataType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EBD75BC5242953C60073866F /* Fonts */ = {
@@ -134,6 +198,7 @@
 			children = (
 				EB45332B2428255D00FAD748 /* ViewController.swift */,
 				EB6929B52429814900422E14 /* ProfileViewController.swift */,
+				EB0CC4AF242E8CCC0070EEED /* TableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -145,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB4533382428255F00FAD748 /* Build configuration list for PBXNativeTarget "Vibe" */;
 			buildPhases = (
+				78B014470746EEFA8DC8C403 /* [CP] Check Pods Manifest.lock */,
 				EB4533202428255D00FAD748 /* Sources */,
 				EB4533212428255D00FAD748 /* Frameworks */,
 				EB4533222428255D00FAD748 /* Resources */,
@@ -214,16 +280,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78B014470746EEFA8DC8C403 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vibe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB4533202428255D00FAD748 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EB553DFE242998C5004EBD7D /* SceneDelegate.swift in Sources */,
+				EBB9CF1F242DAEC700FA4D5C /* TrackCell.swift in Sources */,
+				EB0CC4B2242F074C0070EEED /* ArtistCell.swift in Sources */,
+				EB542E72242D5F03006215D7 /* DataType.swift in Sources */,
+				EB0CC4B0242E8CCC0070EEED /* TableViewController.swift in Sources */,
+				EBCA5C21242AE63D00046D62 /* Track.swift in Sources */,
 				EB45332C2428255D00FAD748 /* ViewController.swift in Sources */,
+				EBCA5C28242B10DF00046D62 /* Artist.swift in Sources */,
 				EB4533282428255D00FAD748 /* AppDelegate.swift in Sources */,
-				EB6929B82429871100422E14 /* SpotifyData.swift in Sources */,
+				EB2722D3242BF02E00D89DB6 /* ItemListView.swift in Sources */,
+				EBCA5C24242AE66E00046D62 /* TokenData.swift in Sources */,
+				EBE2E02D242C886700D37739 /* HeaderView.swift in Sources */,
+				EB6929B82429871100422E14 /* SpotifyManager.swift in Sources */,
 				EB6929B62429814900422E14 /* ProfileViewController.swift in Sources */,
+				EBB9CF21242DCB4C00FA4D5C /* MenuBar.swift in Sources */,
+				EBCA5C26242B10B600046D62 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,21 +459,19 @@
 		};
 		EB4533392428255F00FAD748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038144B70DB7EC1232E69FD0 /* Pods-Vibe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QDYL7YJ95;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vibe",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Vibe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.euglo.Vibe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -382,21 +482,19 @@
 		};
 		EB45333A2428255F00FAD748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F814E2DD4311A101F552F78 /* Pods-Vibe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QDYL7YJ95;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vibe",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Vibe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.euglo.Vibe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
