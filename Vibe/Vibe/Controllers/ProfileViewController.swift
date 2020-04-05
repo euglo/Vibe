@@ -16,7 +16,9 @@ struct CellData {
 var imageCache = NSCache<NSString, UIImage>()
 
 class ProfileViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    let spotifyManager = SpotifyManager.shared
+    var trackData: TrackData?
+    var artistData: ArtistData?
+    
     let padding: CGFloat = 12
     let menuBarHeight: CGFloat = 50
     let trackID = "trackID"
@@ -40,10 +42,10 @@ class ProfileViewController: UICollectionViewController, UICollectionViewDelegat
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var count: Int
         if section == 0 {
-            count = spotifyManager.trackData?.items.count ?? 0
+            count = trackData?.items.count ?? 0
         }
         else {
-            count = spotifyManager.artistData?.items.count ?? 0
+            count = artistData?.items.count ?? 0
         }
         return count
     }
@@ -52,11 +54,13 @@ class ProfileViewController: UICollectionViewController, UICollectionViewDelegat
         if cellType == .artist {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: artistID, for: indexPath) as! ArtistCell
             cell.index = indexPath.item
+            cell.artistData = artistData
             cell.setupViews()
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: trackID, for: indexPath) as! TrackCell
             cell.index = indexPath.item
+            cell.trackData = trackData
             cell.setupViews()
             return cell
         }
@@ -103,4 +107,5 @@ class ProfileViewController: UICollectionViewController, UICollectionViewDelegat
         }
         
     }
+    
 }

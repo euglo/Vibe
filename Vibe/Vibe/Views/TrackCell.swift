@@ -9,7 +9,7 @@
 import UIKit
 
 class TrackCell: UICollectionViewCell {
-    var spotifyManager = SpotifyManager.shared
+    var trackData: TrackData?
     var index = 0
     let albumCover = UIImageView()
     let name = UILabel()
@@ -27,7 +27,7 @@ class TrackCell: UICollectionViewCell {
     }
     
     func setupViews() {
-        guard let tracks = spotifyManager.trackData?.items else { return }
+        guard let tracks = trackData?.items else { return }
         let urlString = tracks[index].album.images[0].url
         guard let url = URL(string: urlString) else { return }
         

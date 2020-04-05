@@ -9,9 +9,11 @@
 import Foundation
 import Alamofire
 
+protocol SpotifyManagerDelegate {
+    func didGetSpotifyData()
+}
+
 class SpotifyManager {
-    static let shared = SpotifyManager()
-    
     private let SpotifyClientID = "4ad4037801ea4fc29733f59132a872a3"
     private let SpotifyClientSecret = "a63558cbcdc442358d43dbe20aca27de"
     private let SpotifyRedirectURL = "vibe-login://spotify-login-callback"
@@ -24,6 +26,8 @@ class SpotifyManager {
     var trackData: TrackData?
     var artistData: ArtistData?
     
+    var delegate: SpotifyManagerDelegate?
+    
     func getClientID() -> String {
         return SpotifyClientID
     }
@@ -32,15 +36,11 @@ class SpotifyManager {
         return SpotifyRedirectURL
     }
     
-    func setCode(code: String) {
+    func fetchData(code: String) {
         self.code = code
-    }
-    
-    func getToken(callback: @escaping () -> Void) {
-        guard let myCode = code else { return }
         
         let parameters: [String: String] = [
-            "code": myCode,
+            "code": code,
             "redirect_uri": SpotifyRedirectURL,
             "grant_type": "authorization_code",
             "client_id": SpotifyClientID,
@@ -65,7 +65,7 @@ class SpotifyManager {
             }
         
         group.notify(queue: .main) {
-            self.getTracks(callback: callback)
+            self.getTracksAndArtists()
         }
     }
     
@@ -102,7 +102,7 @@ class SpotifyManager {
         }
     }
     
-    func getTracks(callback: @escaping () -> Void) {
+    func getTracksAndArtists() {
         guard let accessToken = tokenData?.access_token else { return }
         
         let headers: HTTPHeaders = [
@@ -131,7 +131,7 @@ class SpotifyManager {
         }
         
         group.notify(queue: .main) {
-            callback()
+            self.delegate?.didGetSpotifyData()
         }
     }
     

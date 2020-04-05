@@ -9,8 +9,11 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    var trackData: TrackData?
+    var artistData: ArtistData?
+    
     let tableLayout = [
-        ["Top Tracks", "Top Artists"]
+        ["Top Tracks", "Top Artists", "Sign Out"]
     ]
     let cellID = "cellID"
     
@@ -47,10 +50,13 @@ class TableViewController: UITableViewController {
         let layout = UICollectionViewFlowLayout()
         let profileVC = ProfileViewController(collectionViewLayout: layout)
         if indexPath.row == 0 {
+            profileVC.trackData = trackData
             profileVC.cellType = .track
-            
         } else if indexPath.row == 1 {
+            profileVC.artistData = artistData
             profileVC.cellType = .artist
+        } else if indexPath.row == 2 {
+            signOut()
         }
         navigationController?.pushViewController(profileVC, animated: true)
     }
@@ -58,4 +64,10 @@ class TableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return tableLayout.count
     }
+    
+    private func signOut() {
+        let loginVC = LoginViewController()
+        self.present(loginVC, animated: true, completion: nil)
+    }
+    
 }

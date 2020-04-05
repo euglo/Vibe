@@ -10,6 +10,7 @@
 		C44E7BDF983FB2FE009C8839 /* libPods-Vibe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B14EABD79C60120698ABDC /* libPods-Vibe.a */; };
 		EB0CC4B0242E8CCC0070EEED /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CC4AF242E8CCC0070EEED /* TableViewController.swift */; };
 		EB0CC4B2242F074C0070EEED /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CC4B1242F074C0070EEED /* ArtistCell.swift */; };
+		EB1B08A524315E54005225FF /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B08A424315E54005225FF /* SignupView.swift */; };
 		EB2722D3242BF02E00D89DB6 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2722D2242BF02E00D89DB6 /* ItemListView.swift */; };
 		EB4533282428255D00FAD748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4533272428255D00FAD748 /* AppDelegate.swift */; };
 		EB45332C2428255D00FAD748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB45332B2428255D00FAD748 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 		EB553DFE242998C5004EBD7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB553DFD242998C5004EBD7D /* SceneDelegate.swift */; };
 		EB6929B62429814900422E14 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B52429814900422E14 /* ProfileViewController.swift */; };
 		EB6929B82429871100422E14 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6929B72429871100422E14 /* SpotifyManager.swift */; };
+		EB6C33AF243009B700BAF8FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C33AE243009B700BAF8FE /* LoginViewController.swift */; };
 		EBB9CF1F242DAEC700FA4D5C /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9CF1E242DAEC700FA4D5C /* TrackCell.swift */; };
 		EBB9CF21242DCB4C00FA4D5C /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9CF20242DCB4C00FA4D5C /* MenuBar.swift */; };
 		EBCA5C21242AE63D00046D62 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5C20242AE63D00046D62 /* Track.swift */; };
@@ -45,6 +47,7 @@
 		A0B14EABD79C60120698ABDC /* libPods-Vibe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vibe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0CC4AF242E8CCC0070EEED /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EB0CC4B1242F074C0070EEED /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		EB1B08A424315E54005225FF /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EB2722D2242BF02E00D89DB6 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		EB4533242428255D00FAD748 /* Vibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4533272428255D00FAD748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		EB553DFD242998C5004EBD7D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/SceneDelegate.swift"; sourceTree = "<group>"; };
 		EB6929B52429814900422E14 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EB6929B72429871100422E14 /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		EB6C33AE243009B700BAF8FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB9A5A9A24283A7800DCBD97 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = Vibe/SpotifyiOS.framework; sourceTree = "<group>"; };
 		EBB9CF1E242DAEC700FA4D5C /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		EBB9CF20242DCB4C00FA4D5C /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				EBB9CF1E242DAEC700FA4D5C /* TrackCell.swift */,
 				EB0CC4B1242F074C0070EEED /* ArtistCell.swift */,
 				EBB9CF20242DCB4C00FA4D5C /* MenuBar.swift */,
+				EB1B08A424315E54005225FF /* SignupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				EB45332B2428255D00FAD748 /* ViewController.swift */,
 				EB6929B52429814900422E14 /* ProfileViewController.swift */,
 				EB0CC4AF242E8CCC0070EEED /* TableViewController.swift */,
+				EB6C33AE243009B700BAF8FE /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1B08A524315E54005225FF /* SignupView.swift in Sources */,
 				EB553DFE242998C5004EBD7D /* SceneDelegate.swift in Sources */,
 				EBB9CF1F242DAEC700FA4D5C /* TrackCell.swift in Sources */,
 				EB0CC4B2242F074C0070EEED /* ArtistCell.swift in Sources */,
@@ -323,6 +330,7 @@
 				EBCA5C24242AE66E00046D62 /* TokenData.swift in Sources */,
 				EBE2E02D242C886700D37739 /* HeaderView.swift in Sources */,
 				EB6929B82429871100422E14 /* SpotifyManager.swift in Sources */,
+				EB6C33AF243009B700BAF8FE /* LoginViewController.swift in Sources */,
 				EB6929B62429814900422E14 /* ProfileViewController.swift in Sources */,
 				EBB9CF21242DCB4C00FA4D5C /* MenuBar.swift in Sources */,
 				EBCA5C26242B10B600046D62 /* Album.swift in Sources */,

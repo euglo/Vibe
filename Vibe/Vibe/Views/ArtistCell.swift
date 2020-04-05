@@ -9,7 +9,7 @@
 import UIKit
 
 class ArtistCell: UICollectionViewCell {
-    var spotifyManager = SpotifyManager.shared
+    var artistData: ArtistData?
     var index = 0
     let albumCover = UIImageView()
     let name = UILabel()
@@ -23,7 +23,7 @@ class ArtistCell: UICollectionViewCell {
     }
     
     func setupViews() {
-        guard let artists = spotifyManager.artistData?.items else { return }
+        guard let artists = artistData?.items else { return }
         let urlString = artists[index].images?[0].url ?? ""
         guard let url = URL(string: urlString) else { return }
         

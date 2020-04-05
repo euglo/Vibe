@@ -9,8 +9,19 @@
 import UIKit
 import AuthenticationServices
 
-class ViewController: UIViewController {
-    let spotifyManager = SpotifyManager.shared
+class ViewController: UIViewController, SpotifyManagerDelegate {
+    let spotifyManager = SpotifyManager()
+    
+    func didGetSpotifyData() {
+        let tableVC = TableViewController()
+        tableVC.trackData = spotifyManager.trackData
+        tableVC.artistData = spotifyManager.artistData
+        
+        let navigation = UINavigationController(rootViewController: tableVC)
+        navigation.modalPresentationStyle = .fullScreen
+        navigation.modalTransitionStyle = .crossDissolve
+        self.present(navigation, animated: true, completion: nil)
+    }
     
     let spotifyButton: UIButton = {
         let button = UIButton()
@@ -37,6 +48,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        spotifyManager.delegate = self
         setupLayout()
     }
     
@@ -59,14 +71,7 @@ class ViewController: UIViewController {
             let queryItems = URLComponents(string: callbackURL.absoluteString)?.queryItems
             
             if let code = queryItems?.filter({ $0.name == "code" }).first?.value {
-                self.spotifyManager.setCode(code: code)
-                self.spotifyManager.getToken {
-                    let tableVC = TableViewController()
-                    let navigation = UINavigationController(rootViewController: tableVC)
-                    navigation.modalPresentationStyle = .fullScreen
-                    navigation.modalTransitionStyle = .crossDissolve
-                    self.present(navigation, animated: true, completion: nil)
-                }
+                self.spotifyManager.fetchData(code: code)
             }
         }
         
@@ -107,10 +112,13 @@ class ViewController: UIViewController {
         ]
         NSLayoutConstraint.activate(constraints)
     }
+    
 }
 
 extension ViewController: ASWebAuthenticationPresentationContextProviding {
+    
     func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
         return view.window!
     }
+    
 }
